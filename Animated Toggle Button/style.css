@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.toggle-btn{
+    position: relative;
+    height: 155px;
+    width: 300px;
+    background: #ddd;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.toggle-btn.active{
+    background: #0491ad;
+}
+
+.toggle-btn .icon{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 70px;
+    color: #999;
+    height: 120px;
+    width: 120px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+}
+
+.toggle-btn.active .icon{
+    color: #0491ad;
+    left: calc(100% - 120px - 20px);
+}
